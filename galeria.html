@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Heartz Band</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina-clara">
+
+  <!-- ===== BARRA SUPERIOR (logo que regresa al Inicio) ===== -->
+  <header class="barra">
+    <a href="index.html" class="barra-logo" aria-label="Ir al inicio">
+      <img src="img/logo-negro.png" alt="Heartz Band">
+    </a>
+  </header>
+
+  <!-- ===== BOTÓN HAMBURGUESA ===== -->
+  <button class="hamburguesa" id="abrir-menu" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ===== CONTENIDO ===== -->
+  <main class="contenido">
+    <section class="encabezado-seccion">
+      <h1>Galería</h1>
+      <p>Sesiones en vivo, eventos y ensayos de la agrupación.</p>
+    </section>
+
+    <!-- Categorías: 3.1 En vivo · 3.2 Eventos · 3.3 Ensayos -->
+    <section class="categorias" aria-label="Categorías de la galería">
+      <div class="categoria deshabilitada" aria-disabled="true">
+        <img src="img/galeria/en-vivo.jpg" alt="Sesiones en vivo de Heartz Band">
+        <div class="categoria-texto">
+          <h2>En vivo</h2>
+          <span>Próximamente</span>
+        </div>
+      </div>
+
+      <a class="categoria" href="eventos.html">
+        <img src="img/galeria/eventos.jpg" alt="Eventos de Heartz Band">
+        <div class="categoria-texto">
+          <h2>Eventos</h2>
+          <span>Ver fotos &rarr;</span>
+        </div>
+      </a>
+
+      <div class="categoria deshabilitada" aria-disabled="true">
+        <img src="img/galeria/ensayos.jpg" alt="Ensayos de Heartz Band">
+        <div class="categoria-texto">
+          <h2>Ensayos</h2>
+          <span>Próximamente</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== MENÚ DESPLEGABLE (igual que en el Inicio) ===== -->
+  <nav class="menu" id="menu" aria-hidden="true">
+    <div class="menu-opciones">
+      <a href="#" data-img="img/menu/biografia.jpg" class="deshabilitada" aria-disabled="true">Biografía</a>
+      <a href="galeria.html" data-img="img/menu/galeria.jpg" aria-current="page">Galería</a>
+      <a href="#" data-img="img/menu/contacto.jpg" class="deshabilitada" aria-disabled="true">Contacto</a>
+    </div>
+
+    <div class="menu-imagen">
+      <img src="img/menu/galeria.jpg" alt="" id="menu-img">
+    </div>
+
+    <button class="cerrar" id="cerrar-menu" aria-label="Cerrar menú">&times;</button>
+  </nav>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

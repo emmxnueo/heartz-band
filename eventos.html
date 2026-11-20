@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos | Heartz Band</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina-clara">
+
+  <!-- ===== BARRA SUPERIOR ===== -->
+  <header class="barra">
+    <a href="index.html" class="barra-logo" aria-label="Ir al inicio">
+      <img src="img/logo-negro.png" alt="Heartz Band">
+    </a>
+  </header>
+
+  <!-- ===== BOTÓN HAMBURGUESA ===== -->
+  <button class="hamburguesa" id="abrir-menu" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ===== CONTENIDO ===== -->
+  <main class="contenido">
+    <a href="galeria.html" class="volver">&larr; Galería</a>
+
+    <section class="encabezado-seccion">
+      <h1>Eventos</h1>
+      <p>Presentaciones de la banda en fiestas, bazares y escenarios.</p>
+    </section>
+
+    <!-- Cuadrícula de fotos: al dar clic se abre la foto ampliada -->
+    <section class="cuadricula" aria-label="Fotos de eventos">
+      <button class="foto" type="button" data-grande="img/eventos/evento01.jpg">
+        <img src="img/eventos/mini/evento01.jpg" alt="Heartz Band tocando en Charro Negro" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento02.jpg">
+        <img src="img/eventos/mini/evento02.jpg" alt="Cantante de Heartz Band en la Palapa del Rock" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento03.jpg">
+        <img src="img/eventos/mini/evento03.jpg" alt="Heartz Band tocando en una fiesta" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento04.jpg">
+        <img src="img/eventos/mini/evento04.jpg" alt="Integrantes de Heartz Band en un cumpleaños" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento05.jpg">
+        <img src="img/eventos/mini/evento05.jpg" alt="Guitarrista de Heartz Band en la Palapa del Rock" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento06.jpg">
+        <img src="img/eventos/mini/evento06.jpg" alt="Heartz Band tocando en un cumpleaños" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento07.jpg">
+        <img src="img/eventos/mini/evento07.jpg" alt="Heartz Band completa tocando en un salón" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento08.jpg">
+        <img src="img/eventos/mini/evento08.jpg" alt="Bajista de Heartz Band en el patio" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento09.jpg">
+        <img src="img/eventos/mini/evento09.jpg" alt="Heartz Band tocando en Calle 47 Bazar" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento10.jpg">
+        <img src="img/eventos/mini/evento10.jpg" alt="Baterista de Heartz Band con luces de neón" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento11.jpg">
+        <img src="img/eventos/mini/evento11.jpg" alt="Guitarrista de Heartz Band en una fiesta" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento12.jpg">
+        <img src="img/eventos/mini/evento12.jpg" alt="Heartz Band tocando en la posada" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento13.jpg">
+        <img src="img/eventos/mini/evento13.jpg" alt="Integrantes de Heartz Band en el evento de la Florería" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento14.jpg">
+        <img src="img/eventos/mini/evento14.jpg" alt="Vocalista de Heartz Band en Calle 47 Bazar" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento15.jpg">
+        <img src="img/eventos/mini/evento15.jpg" alt="Heartz Band en el escenario de Charro Negro" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento16.jpg">
+        <img src="img/eventos/mini/evento16.jpg" alt="Tecladista de Heartz Band en una fiesta" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento17.jpg">
+        <img src="img/eventos/mini/evento17.jpg" alt="Manos del tecladista de Heartz Band" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento18.jpg">
+        <img src="img/eventos/mini/evento18.jpg" alt="Guitarrista de Heartz Band con luz roja" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento19.jpg">
+        <img src="img/eventos/mini/evento19.jpg" alt="Bajo de Heartz Band en la Palapa del Rock" loading="lazy">
+      </button>
+      <button class="foto" type="button" data-grande="img/eventos/evento20.jpg">
+        <img src="img/eventos/mini/evento20.jpg" alt="Batería de Heartz Band en la Palapa del Rock" loading="lazy">
+      </button>
+    </section>
+  </main>
+
+  <!-- ===== FOTO AMPLIADA (oculta al inicio) ===== -->
+  <div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Foto ampliada" aria-hidden="true">
+    <button class="cerrar" id="cerrar-visor" aria-label="Cerrar foto">&times;</button>
+    <button class="flecha izquierda" id="foto-anterior" aria-label="Foto anterior">&#8249;</button>
+    <figure>
+      <img id="visor-img" src="" alt="">
+      <figcaption id="visor-contador"></figcaption>
+    </figure>
+    <button class="flecha derecha" id="foto-siguiente" aria-label="Foto siguiente">&#8250;</button>
+  </div>
+
+  <!-- ===== MENÚ DESPLEGABLE ===== -->
+  <nav class="menu" id="menu" aria-hidden="true">
+    <div class="menu-opciones">
+      <a href="#" data-img="img/menu/biografia.jpg" class="deshabilitada" aria-disabled="true">Biografía</a>
+      <a href="galeria.html" data-img="img/menu/galeria.jpg">Galería</a>
+      <a href="#" data-img="img/menu/contacto.jpg" class="deshabilitada" aria-disabled="true">Contacto</a>
+    </div>
+
+    <div class="menu-imagen">
+      <img src="img/menu/galeria.jpg" alt="" id="menu-img">
+    </div>
+
+    <button class="cerrar" id="cerrar-menu" aria-label="Cerrar menú">&times;</button>
+  </nav>
+
+  <script src="js/menu.js"></script>
+  <script src="js/galeria.js"></script>
+</body>
+</html>
